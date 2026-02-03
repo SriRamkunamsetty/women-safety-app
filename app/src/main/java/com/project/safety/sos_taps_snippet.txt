@@ -1,0 +1,43 @@
+      private fun handleSOSClick() {
+        val currentTime = System.currentTimeMillis()
+        
+        if (currentTime - sosLastClickTime > CLICK_TIME_INTERVAL) {
+            sosClickCount = 0
+        }
+        
+        sosClickCount++
+        sosLastClickTime = currentTime
+        
+        if (sosClickCount == 3) {
+            sosClickCount = 0 // Reset after successful trigger
+            callEmergencyContact()
+        }
+    }
+
+    private fun callEmergencyContact() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(this, "Call permission required for emergency calls", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val contacts = sharedPref.getEmergencyContacts()
+        if (contacts.isNotEmpty()) {
+            val contact = contacts[0]
+            val phoneNumber = contact.phone
+            
+            if (phoneNumber.isNotEmpty()) {
+                try {
+                    val intent = Intent(Intent.ACTION_CALL)
+                    intent.data = android.net.Uri.parse("tel:$phoneNumber")
+                    startActivity(intent)
+                    Toast.makeText(this, "Calling Emergency Contact: ${contact.name}", Toast.LENGTH_LONG).show()
+                } catch (e: Exception) {
+                    Toast.makeText(this, "Failed to make call: ${e.message}", Toast.LENGTH_SHORT).show()
+                }
+            } else {
+                 Toast.makeText(this, "Emergency contact has no phone number", Toast.LENGTH_SHORT).show()
+            }
+        } else {
+            Toast.makeText(this, "No emergency contacts found. Please add one.", Toast.LENGTH_LONG).show()
+        }
+    }

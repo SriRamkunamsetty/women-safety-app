@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Heart shape -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M60,95 C30,75 10,55 10,35 C10,20 25,10 40,10 C50,10 60,15 60,25 C60,15 70,10 80,10 C95,10 110,20 110,35 C110,55 90,75 60,95 Z"/>
+
+    <!-- Plus sign inside -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,55 L55,65 L65,65 L65,55 L75,55 L75,45 L65,45 L65,35 L55,35 L55,45 L45,45 L45,55 Z"/>
+</vector>
