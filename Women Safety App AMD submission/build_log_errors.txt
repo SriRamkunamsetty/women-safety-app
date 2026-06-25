@@ -1,0 +1,118 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:processDebugGoogleServices UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest FROM-CACHE
+> Task :app:processDebugManifest FROM-CACHE
+> Task :app:processDebugManifestForPackage FROM-CACHE
+> Task :app:processDebugResources FROM-CACHE
+
+> Task :app:compileDebugKotlin FAILED
+e: file:///C:/Users/KANOJ/.gradle/caches/8.10.2/transforms/147775115bc9c764f710297f7b1a591a/transformed/jetified-firebase-auth-24.0.1-api.jar!/META-INF/java.com.google.android.gmscore.integ.client.firebase-auth-api_firebase-auth-api.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/KANOJ/.gradle/caches/8.10.2/transforms/2e2a5e103bde52c9be42c510694d3240/transformed/jetified-play-services-measurement-impl-23.0.0-api.jar!/META-INF/java.com.google.android.gms.libs.filecompliance.proto_file_access_api_type_kt_proto_lite.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/KANOJ/.gradle/caches/8.10.2/transforms/2e2a5e103bde52c9be42c510694d3240/transformed/jetified-play-services-measurement-impl-23.0.0-api.jar!/META-INF/third_party.kotlin.protobuf.src.commonMain.kotlin.com.google.protobuf.kotlin_only_for_use_in_proto_generated_code_its_generator_and_tests.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/KANOJ/.gradle/caches/8.10.2/transforms/2e2a5e103bde52c9be42c510694d3240/transformed/jetified-play-services-measurement-impl-23.0.0-api.jar!/META-INF/third_party.kotlin.protobuf.src.commonMain.kotlin.com.google.protobuf.kotlin_shared_runtime.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/KANOJ/.gradle/caches/8.10.2/transforms/bb82955749eed92ff3caf7e1fe3aafbd/transformed/jetified-play-services-measurement-api-23.0.0-api.jar!/META-INF/java.com.google.android.gmscore.integ.client.measurement_api_measurement_api.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/EmergencyContactsActivity.kt:71:29 Type mismatch: inferred type is List<com.project.safety.utils.EmergencyContact> but Collection<com.project.safety.models.EmergencyContact> was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/EmergencyContactsActivity.kt:220:42 Type mismatch: inferred type is MutableList<com.project.safety.models.EmergencyContact> but List<com.project.safety.utils.EmergencyContact> was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/IncidentReportActivity.kt:44:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/IncidentReportActivity.kt:217:52 Type mismatch: inferred type is List<String> but Comparable<*>? was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/IncidentReportActivity.kt:217:52 Type mismatch: inferred type is List<String> but Serializable? was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/IncidentReportActivity.kt:217:52 Type mismatch: inferred type is List<String> but {Comparable<*>? & java.io.Serializable?} was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/IncidentReportActivity.kt:219:45 Type mismatch: inferred type is kotlin.collections.HashMap<String, {Comparable<*>? & java.io.Serializable?}> /* = java.util.HashMap<String, {Comparable<*>? & java.io.Serializable?}> */ but java.util.HashMap<String, Any> was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/IncidentReportActivity.kt:226:37 Type mismatch: inferred type is kotlin.collections.HashMap<String, {Comparable<*>? & java.io.Serializable?}> /* = java.util.HashMap<String, {Comparable<*>? & java.io.Serializable?}> */ but java.util.HashMap<String, Any> was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:38:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:147:47 Unresolved reference: Intent
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:147:54 Unresolved reference: Intent
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:148:33 Unresolved reference: type
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:149:33 Unresolved reference: putExtra
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:149:42 Unresolved reference: Intent
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:151:33 Unresolved reference: putExtra
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:151:42 Unresolved reference: Intent
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:154:43 Unresolved reference: Intent
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:170:22 Unresolved reference: Intent
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:170:35 Unresolved reference: LocationTrackingService
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:171:16 Variable expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:178:22 Unresolved reference: Intent
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:178:35 Unresolved reference: LocationTrackingService
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LiveLocationActivity.kt:179:16 Variable expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LoginActivity.kt:8:33 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LoginActivity.kt:9:28 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LoginActivity.kt:24:16 Unresolved reference: Firebase
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/LoginActivity.kt:25:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/MainActivity.kt:27:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/PhoneLoginActivity.kt:12:33 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/PhoneLoginActivity.kt:13:28 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/PhoneLoginActivity.kt:29:16 Unresolved reference: Firebase
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/ProfileSetupActivity.kt:8:33 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/ProfileSetupActivity.kt:10:28 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/ProfileSetupActivity.kt:28:16 Unresolved reference: Firebase
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/ProfileSetupActivity.kt:30:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/ProfileSetupActivity.kt:47:47 Unresolved reference: selectedItem
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/ProfileSetupActivity.kt:80:53 Unresolved reference: UserProfile
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:8:33 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:10:28 Unresolved reference: ktx
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:28:16 Unresolved reference: Firebase
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:30:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:36:17 Unresolved reference: btnRegister
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:40:17 Unresolved reference: btnLogin
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:47:28 Unresolved reference: etName
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:48:29 Unresolved reference: etEmail
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:49:29 Unresolved reference: etPhone
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:50:32 Unresolved reference: etPassword
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:51:39 Unresolved reference: etConfirmPassword
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:68:17 Unresolved reference: progressBar
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:68:29 Variable expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:92:29 Unresolved reference: progressBar
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:92:41 Variable expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:119:25 Unresolved reference: progressBar
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:119:37 Variable expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:132:25 Unresolved reference: progressBar
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/RegisterActivity.kt:132:37 Variable expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/SettingsActivity.kt:29:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/SettingsActivity.kt:214:33 Unresolved reference: Constants
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/SettingsActivity.kt:220:33 Unresolved reference: Constants
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/SplashActivity.kt:16:30 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/adapters/SafetyTipsAdapter.kt:16:66 Unresolved reference: tvDescription
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/adapters/SafetyTipsAdapter.kt:17:63 Unresolved reference: tvCategory
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/adapters/SafetyTipsAdapter.kt:22:31 Unresolved reference: item_safety_tip
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/receivers/BootReceiver.kt:14:30 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/services/LocationTrackingService.kt:44:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/services/LocationTrackingService.kt:164:26 Type mismatch: inferred type is kotlin.collections.HashMap<String, {Comparable<*> & java.io.Serializable}!> /* = java.util.HashMap<String, {Comparable<*> & java.io.Serializable}!> */ but kotlin.collections.HashMap<String, Any> /* = java.util.HashMap<String, Any> */ was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/services/SOSService.kt:42:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/services/ShakeDetectionService.kt:28:25 Type mismatch: inferred type is Sensor? but Sensor was expected
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/services/ShakeDetectionService.kt:30:22 Cannot access '<init>': it is private in 'SharedPrefManager'
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/utils/SharedPrefManager.kt:5:19 Unresolved reference: gson
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/utils/SharedPrefManager.kt:6:19 Unresolved reference: gson
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/utils/SharedPrefManager.kt:25:24 Unresolved reference: Gson
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/utils/SharedPrefManager.kt:72:33 Unresolved reference: TypeToken
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/utils/SharedPrefManager.kt:72:72 Unresolved reference: type
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/utils/SharedPrefManager.kt:146:33 Unresolved reference: TypeToken
+e: file:///D:/QIS-College-pro/women-safety-app-main/app/src/main/java/com/project/safety/utils/SharedPrefManager.kt:146:83 Unresolved reference: type
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 20s
+18 actionable tasks: 2 executed, 4 from cache, 12 up-to-date

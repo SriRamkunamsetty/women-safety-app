@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Safety App</string>
+    <string-array name="incident_types">
+        <item>Harassment</item>
+        <item>Stalking</item>
+        <item>Domestic Violence</item>
+        <item>Theft</item>
+        <item>Other</item>
+    </string-array>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FakeCallActivity">
+
+    <!-- Configuration Screen -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fake Call Setup"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Caller Name"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spCaller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer (Minutes)"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etTimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter minutes (0 for instant)"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnSetTimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Timer"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_marginBottom="16dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/swAutoAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auto Answer after 3s"
+                android:layout_marginBottom="32dp" />
+
+            <Button
+                android:id="@+id/btnStartFakeCall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Start Fake Call Now" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Fake Incoming Call Screen -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutCallScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tvCallerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="Mom"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCallerType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Incoming call"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCallerName" />
+
+        <Button
+            android:id="@+id/btnAnswerCall"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginEnd="60dp"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="35dp"
+            app:icon="@drawable/ic_call"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/btnRejectCall"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="80dp"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="35dp"
+            app:icon="@drawable/ic_call"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- In-Call Screen -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutConversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvConversation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="24dp"
+            android:gravity="bottom"
+            android:layout_marginBottom="100dp"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnStopFakeCall"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            app:cornerRadius="35dp"
+            app:icon="@drawable/ic_call"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
